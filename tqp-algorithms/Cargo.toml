@@ -1,0 +1,13 @@
+[package]
+name = "tqp-algorithms"
+version = "0.1.0"
+edition = "2021"
+authors = ["Jung Wook Yang <sadpig70@gmail.com>"]
+description = "Quantum algorithms collection (VQE, QAOA) for TQP"
+license = "MIT"
+repository = "https://github.com/sadpig70/TQP"
+
+[dependencies]
+tqp-core = { path = "../tqp-core" }
+ndarray = "0.15"
+num-complex = "0.4"

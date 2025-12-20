@@ -1,0 +1,38 @@
+# Git ignore for TQP project
+
+# Build artifacts
+/target/
+**/target/
+
+# Cargo lock (library project - let users generate their own)
+Cargo.lock
+
+# Legacy/archived files
+/_legacy/
+
+# IDE and editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment and secrets
+.env
+.env.local
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+
+# Claude/Gemini local settings
+.claude/

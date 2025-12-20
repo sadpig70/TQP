@@ -1,0 +1,34 @@
+[package]
+name = "tqp-core"
+version = "1.2.0"
+edition = "2021"
+authors = ["Jung Wook Yang <sadpig70@gmail.com>"]
+description = "Temporal Quantum Processor core simulation library - state vector simulation with time-multiplexing"
+license = "MIT"
+repository = "https://github.com/sadpig70/TQP"
+keywords = ["quantum", "simulation", "vqe", "qaoa", "hamiltonian"]
+categories = ["science", "simulation"]
+readme = "README.md"
+
+[dependencies]
+ndarray = "0.15"
+num-complex = "0.4"
+rand = "0.8"
+log = "0.4"
+rustc-hash = "1.1"  # Fast hash for sparse state vector
+rayon = "1.8"       # Data parallelism for multi-core
+
+[target.'cfg(target_arch = "x86_64")'.dependencies]
+# AVX-512 intrinsics are available via std::arch on stable Rust
+# No additional dependencies needed for intrinsics
+
+[dev-dependencies]
+criterion = "0.4"
+
+[[bench]]
+name = "performance_bench"
+harness = false
+
+[[bench]]
+name = "inplace_bench"
+harness = false

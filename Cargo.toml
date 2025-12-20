@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "tqp-core",
+    "tqp-algorithms",
+    "tqp-ibm",
+    "tqp-py",
+]
+resolver = "2"
