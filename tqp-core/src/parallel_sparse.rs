@@ -408,10 +408,7 @@ pub fn parallel_execute_circuits<F>(num_circuits: usize, circuit_fn: F) -> Vec<S
 where
     F: Fn(usize) -> SparseStateVector + Sync + Send,
 {
-    (0..num_circuits)
-        .into_par_iter()
-        .map(circuit_fn)
-        .collect()
+    (0..num_circuits).into_par_iter().map(circuit_fn).collect()
 }
 
 // =============================================================================
