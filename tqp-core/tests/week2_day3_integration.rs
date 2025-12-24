@@ -5,7 +5,7 @@
 //! - SIMD gate operations correctness
 //! - Performance comparison with scalar
 
-use num_complex::Complex64;
+// use num_complex::Complex64;
 use tqp_core::ops::{apply_spatial_gate, apply_spatial_gate_2q};
 use tqp_core::{
     apply_gate_1q_simd, apply_gate_2q_simd, apply_gates_batch_simd, gates, has_avx2, has_avx512,

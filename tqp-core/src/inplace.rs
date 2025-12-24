@@ -466,7 +466,7 @@ pub fn apply_gate_sparse_pooled(
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::sparse_ops::{apply_gate_2q_sparse, apply_gate_sparse, gates};
+    use crate::sparse_ops::{apply_gate_sparse, gates};
 
     const EPSILON: f64 = 1e-10;
 
