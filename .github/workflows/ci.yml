@@ -37,7 +37,7 @@ jobs:
           python-version: '3.10'
           cache: 'pip'
       - name: Install Python Dependencies
-        run: pip install pyscf openfermion openfermionpyscf numpy scipy
+        run: pip install -r requirements.txt
       - uses: Swatinem/rust-cache@v2
       - run: cargo test --workspace --all-features
 
