@@ -8,7 +8,7 @@
 use tqp_core::{
     apply_gate_2q_sparse, apply_gate_sparse, execute_circuit, gates, get_thread_count,
     parallel_apply_gate_2q_sparse, parallel_apply_gate_sparse, parallel_compute_stats,
-    parallel_execute_circuits, parallel_expval_z, parallel_fidelity, GateOp, SparseStateVector,
+    parallel_execute_circuits, parallel_expval_z, GateOp, SparseStateVector,
 };
 
 const EPSILON: f64 = 1e-10;
@@ -189,7 +189,7 @@ fn test_performance_scaling() {
     // Sequential
     let start = Instant::now();
     let mut seq_results = Vec::with_capacity(num_circuits);
-    for i in 0..num_circuits {
+    for _i in 0..num_circuits {
         let mut state = SparseStateVector::new(num_qubits, 1, 1);
         for q in 0..num_qubits {
             apply_gate_sparse(&mut state, q, &gates::hadamard());
