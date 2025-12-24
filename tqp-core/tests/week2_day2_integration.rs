@@ -103,7 +103,7 @@ fn test_bin_parallel_correctness() {
 
     // Process: add 10 to bin index
     let bin_par = BinParallel::new(state.dims);
-    let results = bin_par.process_parallel(&state, |chunk, layer, bin| {
+    let results = bin_par.process_parallel(&state, |chunk, _layer, _bin| {
         chunk
             .data
             .iter()
@@ -231,7 +231,7 @@ fn test_barrier_phases() {
     let sync = BarrierSync::new(4);
 
     let counter_clone = Arc::clone(&counter);
-    let results: Vec<usize> = sync.execute_with_barrier(move |thread_id, barrier| {
+    let results: Vec<usize> = sync.execute_with_barrier(move |_thread_id, barrier| {
         // Phase 1: increment counter
         counter_clone.fetch_add(1, Ordering::SeqCst);
 
