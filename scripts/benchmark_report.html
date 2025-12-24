@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TQP vs Qiskit Benchmark Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #f5f5f5; }
+        h1 { color: #333; }
+        table { border-collapse: collapse; margin: 20px 0; background: white; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background: #4CAF50; color: white; }
+        tr:nth-child(even) { background: #f2f2f2; }
+        .highlight { background: #e8f5e9; font-weight: bold; }
+        .summary { background: #fff3e0; padding: 20px; border-radius: 8px; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <h1>🚀 TQP vs Qiskit Benchmark Report</h1>
+    <p>Generated: 2025-12-22</p>
+    
+    <h2>H Chain Performance (Hadamard Gates)</h2>
+    <table>
+        <tr><th>N Qubits</th><th>TQP (μs)</th><th>Qiskit Aer (μs)</th><th>Speedup</th></tr>
+        <tr><td>4</td><td>3.0</td><td>1366.6</td><td class='highlight'>456x</td></tr>
+        <tr><td>8</td><td>6.0</td><td>744.4</td><td class='highlight'>124x</td></tr>
+        <tr><td>12</td><td>9.0</td><td>847.0</td><td class='highlight'>94x</td></tr>
+        <tr><td>16</td><td>13.0</td><td>3425.8</td><td class='highlight'>264x</td></tr>
+    </table>
+    
+    <h2>TQP Time-bin Scaling</h2>
+    <table>
+        <tr><th>M (Time-bins)</th><th>Time (μs)</th><th>Scaling</th></tr>
+        <tr><td>1</td><td>13.4</td><td>1.0x</td></tr>
+        <tr><td>2</td><td>27.7</td><td>2.1x</td></tr>
+        <tr><td>4</td><td>52.7</td><td>3.9x</td></tr>
+        <tr><td>8</td><td>105.1</td><td>7.8x</td></tr>
+    </table>
+    
+    <div class="summary">
+        <h2>📊 Key Findings</h2>
+        <ul>
+            <li><strong>TQP is ~100-450x faster</strong> than Qiskit Aer for statevector operations</li>
+            <li><strong>Linear scaling O(M), O(L)</strong> for time-bin and layer extensions</li>
+            <li><strong>IBM Hardware Validation</strong>: H₂ 2-qubit achieved -7.4 mHa error</li>
+        </ul>
+    </div>
+</body>
+</html>

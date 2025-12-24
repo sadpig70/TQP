@@ -1,6 +1,6 @@
 [package]
 name = "tqp-core"
-version = "1.2.0"
+version = "3.4.0"
 edition = "2021"
 authors = ["Jung Wook Yang <sadpig70@gmail.com>"]
 description = "Temporal Quantum Processor core simulation library - state vector simulation with time-multiplexing"

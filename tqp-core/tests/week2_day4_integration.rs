@@ -5,12 +5,9 @@
 //! - Unified QuantumState API
 //! - Dispatch correctness across backends
 
-use num_complex::Complex64;
-use tqp_core::sparse::SparseStateVector;
 use tqp_core::{
     dispatch_circuit, dispatch_gate_1q, dispatch_gate_2q, gates, select_backend, Backend,
     CircuitGate, DispatchStats, DispatcherConfig, ExecutionBackend, QuantumState, StateBackend,
-    TQPState, PARALLEL_THRESHOLD, SPARSE_THRESHOLD,
 };
 
 const EPSILON: f64 = 1e-10;

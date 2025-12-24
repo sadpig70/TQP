@@ -1,6 +1,6 @@
 [package]
 name = "tqp-ibm"
-version = "1.2.0"
+version = "3.4.0"
 edition = "2021"
 authors = ["Jung Wook Yang <sadpig70@gmail.com>"]
 description = "IBM Quantum backend integration for TQP framework"
@@ -11,7 +11,7 @@ categories = ["science", "simulation"]
 
 [dependencies]
 # TQP Core
-tqp-core = { version = "1.2.0", path = "../tqp-core" }
+tqp-core = { version = "3.4.0", path = "../tqp-core" }
 
 # Async runtime
 tokio = { version = "1.0", features = ["full"] }

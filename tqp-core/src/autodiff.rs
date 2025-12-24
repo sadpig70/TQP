@@ -666,7 +666,7 @@ mod tests {
         let h = Hamiltonian::ising(3);
         let params = vec![0.3, 0.7, 1.2];
 
-        let (analytic, numeric, max_diff) = verify_gradient(&circuit, &params, &h, 1e-6);
+        let (_analytic, _numeric, max_diff) = verify_gradient(&circuit, &params, &h, 1e-6);
 
         assert!(max_diff < 1e-4, "Gradient mismatch: {}", max_diff);
     }

@@ -1,0 +1,105 @@
+{
+  "simulator": "Qiskit Aer",
+  "method": "statevector",
+  "timestamp": "2025-12-23 22:34:37",
+  "trials": 10,
+  "hadamard_chain": [
+    {
+      "n_qubits": 4,
+      "n_gates": 4,
+      "trials": 10,
+      "mean_time_us": 1535.5400006228592,
+      "std_time_us": 2871.924982109498,
+      "median_time_us": 600.4500028211623,
+      "iqr_time_us": 113.67500337655656,
+      "min_time_us": 513.8999986229464,
+      "max_time_us": 9703.600000648294,
+      "peak_memory_bytes": 17891
+    },
+    {
+      "n_qubits": 8,
+      "n_gates": 8,
+      "trials": 10,
+      "mean_time_us": 850.620000710478,
+      "std_time_us": 391.8581073472366,
+      "median_time_us": 678.250002238201,
+      "iqr_time_us": 234.47499916073866,
+      "min_time_us": 625.4999971133657,
+      "max_time_us": 1905.7999961660244,
+      "peak_memory_bytes": 12265
+    },
+    {
+      "n_qubits": 12,
+      "n_gates": 12,
+      "trials": 10,
+      "mean_time_us": 969.9200003524311,
+      "std_time_us": 445.7722952211402,
+      "median_time_us": 816.249998024432,
+      "iqr_time_us": 78.02500294928905,
+      "min_time_us": 771.8000051681884,
+      "max_time_us": 2228.2000063569285,
+      "peak_memory_bytes": 12013
+    },
+    {
+      "n_qubits": 16,
+      "n_gates": 16,
+      "trials": 10,
+      "mean_time_us": 3135.4700011434034,
+      "std_time_us": 738.3254372440612,
+      "median_time_us": 2929.400001448812,
+      "iqr_time_us": 399.3500031356234,
+      "min_time_us": 2672.900001925882,
+      "max_time_us": 5162.400004337542,
+      "peak_memory_bytes": 11644
+    },
+    {
+      "n_qubits": 18,
+      "n_gates": 18,
+      "trials": 10,
+      "mean_time_us": 6835.6100004166365,
+      "std_time_us": 1535.164407429279,
+      "median_time_us": 6819.900001573842,
+      "iqr_time_us": 2051.975005088025,
+      "min_time_us": 5205.000001296867,
+      "max_time_us": 10045.70000077365,
+      "peak_memory_bytes": 11898
+    },
+    {
+      "n_qubits": 20,
+      "n_gates": 20,
+      "trials": 10,
+      "mean_time_us": 20566.949998465134,
+      "std_time_us": 2591.13899221977,
+      "median_time_us": 21926.299999904586,
+      "iqr_time_us": 4377.349994683755,
+      "min_time_us": 16808.39999607997,
+      "max_time_us": 23806.599994713906,
+      "peak_memory_bytes": 13332
+    },
+    {
+      "n_qubits": 22,
+      "n_gates": 22,
+      "trials": 10,
+      "mean_time_us": 72994.57999833976,
+      "std_time_us": 6799.1109399722045,
+      "median_time_us": 75081.59999997588,
+      "iqr_time_us": 7313.549996979418,
+      "min_time_us": 61102.49999619555,
+      "max_time_us": 84852.30000223964,
+      "peak_memory_bytes": 12027
+    },
+    {
+      "n_qubits": 24,
+      "n_gates": 24,
+      "trials": 10,
+      "mean_time_us": 329807.0299999381,
+      "std_time_us": 20764.94887666779,
+      "median_time_us": 327536.0000006913,
+      "iqr_time_us": 25032.174995430978,
+      "min_time_us": 303547.7000012179,
+      "max_time_us": 372933.0999995,
+      "peak_memory_bytes": 12630
+    }
+  ],
+  "qft": []
+}

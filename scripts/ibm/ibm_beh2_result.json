@@ -1,0 +1,9 @@
+{
+  "backend": "ibm_torino",
+  "shots": 4096,
+  "energy_ha": -16.16450911890949,
+  "std_error_ha": 0.004397725707040554,
+  "hf_reference_ha": -15.5614,
+  "error_mha": -603.1091189094884,
+  "job_id": "d548s10nsj9s73b1k5b0"
+}

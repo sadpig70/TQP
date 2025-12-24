@@ -241,6 +241,31 @@ impl ObservableCollection {
     pub fn h2_correlation_energy() -> f64 {
         0.020307 // 20.31 mHa
     }
+
+    /// Create H₂ Hamiltonian (2-qubit, IBM hardware validated)
+    ///
+    /// IBM ibm_torino validated: 7.4 mHa error (2025-12-22)
+    /// Source: arXiv literature (STO-3G, R=0.735Å)
+    ///
+    /// HF state: |10⟩ (qubit 1 occupied)
+    /// Simulation HF energy: -1.0637 Ha
+    pub fn h2_2qubit() -> Self {
+        let mut h = Self::new(2);
+
+        // 검증된 2-qubit H₂ 해밀토니안 계수
+        h.add_term("II", -1.052373);
+        h.add_term("IZ", -0.397937);
+        h.add_term("ZI", -0.397937);
+        h.add_term("ZZ", 0.011280);
+        h.add_term("XX", 0.180931);
+
+        h
+    }
+
+    /// H₂ 2-qubit HF energy (from simulation)
+    pub fn h2_2qubit_hf_energy() -> f64 {
+        -1.0637 // Ha
+    }
 }
 
 // =============================================================================
@@ -318,16 +343,20 @@ impl ObservableCollection {
 
 // =============================================================================
 // BeH₂ Hamiltonian (6-qubit, CASSCF(3,2) based)
+// WARNING: 계수 미검증 - IBM 하드웨어에서 -603 mHa 오차 발생
+// TODO: PySCF로 올바른 계수 생성 필요
 // =============================================================================
 
 impl ObservableCollection {
     /// Create BeH₂ Hamiltonian for 6-qubit system
     ///
+    /// **WARNING**: 이 해밀토니안 계수는 미검증 상태입니다.
+    /// IBM 하드웨어 테스트에서 -603 mHa 오차 발생 (2025-12-22)
+    /// 정확한 계수는 PySCF/OpenFermion으로 재생성 필요
+    ///
     /// CASSCF(3,2) active space: 3 orbitals, 2 electrons
     /// Frozen core: Be 1s orbital
     /// Geometry: Linear BeH₂ at equilibrium (1.326 Å Be-H distance)
-    ///
-    /// Reference: Quantum chemistry calculations for BeH₂
     pub fn beh2_6_qubit() -> Self {
         let mut h = Self::new(6);
 

@@ -1,6 +1,6 @@
 [package]
 name = "tqp-algorithms"
-version = "0.1.0"
+version = "3.4.0"
 edition = "2021"
 authors = ["Jung Wook Yang <sadpig70@gmail.com>"]
 description = "Quantum algorithms collection (VQE, QAOA) for TQP"

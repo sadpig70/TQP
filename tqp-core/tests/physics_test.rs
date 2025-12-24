@@ -1,4 +1,4 @@
-use ndarray::{arr2, Array2};
+use ndarray::arr2;
 use num_complex::Complex64;
 use std::f64::consts::PI;
 use tqp_core::noise::DecoherenceChannel;

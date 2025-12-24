@@ -494,7 +494,7 @@ mod tests {
         use std::time::Instant;
 
         let num_qubits = 12;
-        let num_gates = 50;
+        let _num_gates = 50;
         let h = gates::hadamard();
 
         // SIMD version

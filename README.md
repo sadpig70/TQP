@@ -3,7 +3,7 @@
 [![Rust CI](https://github.com/sadpig70/TQP/workflows/Rust%20CI/badge.svg)](https://github.com/sadpig70/TQP/actions)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-![TQP Status](docs/tqp_status_v1.2.0.png)
+![TQP Status](docs/tqp_status_v3.4.png)
 
 A high-performance quantum computing simulation framework with IBM Quantum hardware integration.
 

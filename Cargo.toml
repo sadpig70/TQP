@@ -4,5 +4,6 @@ members = [
     "tqp-algorithms",
     "tqp-ibm",
     "tqp-py",
+    "tqp-benchmark",
 ]
 resolver = "2"

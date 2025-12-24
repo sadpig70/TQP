@@ -532,7 +532,7 @@ mod tests {
         use crate::state::TQPState;
 
         // Create a dense state
-        let mut dense = TQPState::new(2, 1, 1);
+        let dense = TQPState::new(2, 1, 1);
         // Dense state is |0⟩ with amplitude 1.0
 
         // Convert to sparse

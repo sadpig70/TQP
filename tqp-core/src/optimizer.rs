@@ -1030,12 +1030,14 @@ impl LRSchedule {
 mod tests {
     use super::*;
 
+    #[allow(dead_code)]
     fn rosenbrock(params: &[f64]) -> f64 {
         let x = params[0];
         let y = params[1];
         (1.0 - x).powi(2) + 100.0 * (y - x * x).powi(2)
     }
 
+    #[allow(dead_code)]
     fn rosenbrock_grad(params: &[f64]) -> Vec<f64> {
         let x = params[0];
         let y = params[1];
@@ -1139,7 +1141,7 @@ mod tests {
     #[test]
     fn test_early_stopping() {
         // Test early stopping with a function that plateaus
-        let plateau_fn = |params: &[f64]| -> f64 {
+        let plateau_fn = |_params: &[f64]| -> f64 {
             // Returns constant 1.0 after first call (simulates plateau)
             1.0
         };

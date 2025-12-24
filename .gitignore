@@ -36,3 +36,24 @@ venv/
 
 # Claude/Gemini local settings
 .claude/
+
+# IBM API key
+tqp-ibm-apikey.json
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.pdf
+!/docs/prx/paper/TQP_PRX.pdf
+
+# Generated data files
+beh2_*.json
+h2_statistical_results.json
+

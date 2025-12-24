@@ -657,9 +657,9 @@ mod tests {
     #[test]
     fn test_gate_op_constructors() {
         let h = CircuitGate::h(0);
-        let x = CircuitGate::x(1);
+        let _x = CircuitGate::x(1);
         let cnot = CircuitGate::cnot(0, 1);
-        let cz = CircuitGate::cz(1, 2);
+        let _cz = CircuitGate::cz(1, 2);
 
         match h {
             CircuitGate::Gate1Q { qubit, .. } => assert_eq!(qubit, 0),
