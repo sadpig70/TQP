@@ -3,7 +3,7 @@
 [![Rust CI](https://github.com/sadpig70/TQP/workflows/Rust%20CI/badge.svg)](https://github.com/sadpig70/TQP/actions)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-![TQP Status](docs/tqp_status_v3.4.png)
+![TQP Status](docs/tqp_status_v3.5.png)
 
 A high-performance quantum computing simulation framework with IBM Quantum hardware integration.
 
@@ -19,9 +19,9 @@ A high-performance quantum computing simulation framework with IBM Quantum hardw
 
 | Molecule | Qubits | Error (mHa) | Backend |
 |----------|--------|-------------|---------|
-| H₂ | 4 | 3.97 | ibm_fez |
+| H₂ | 2 | -4.2 | ibm_torino |
 | LiH | 4 | 1.77 | ibm_fez |
-| BeH₂ | 6 | - | Pending |
+| BeH₂ | 14 | - | Pending |
 
 ## Installation
 
@@ -65,8 +65,8 @@ tqp/
 
 ## Documentation
 
-- [Project Status Report](docs/Project_Status_Report.md)
-- [Technical Specification](docs/TQP_Integrated_Specification.md)
+- [Technical Specification v3.5](docs/TQP_Integrated_Specification_3.5.md)
+- [PRX Paper](docs/prx/README.md)
 
 ## License
 

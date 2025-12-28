@@ -55,9 +55,9 @@ pub const SIMD_MIN_DIM: usize = 64;
 /// Backend type for state representation
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum StateBackend {
-    /// Dense representation (Array1<Complex64>)
+    /// Dense representation (`Array1<Complex64>`)
     Dense,
-    /// Sparse representation (FxHashMap<usize, Complex64>)
+    /// Sparse representation (`FxHashMap<usize, Complex64>`)
     Sparse,
 }
 

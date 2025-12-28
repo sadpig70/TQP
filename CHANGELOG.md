@@ -2,6 +2,44 @@
 
 All notable changes to TQP will be documented in this file.
 
+## [3.5.0] - 2025-12-27
+
+### Added
+
+- **PRX Paper Prep**: MPS quantitative comparison (§5.1.1)
+- **PRX Paper Prep**: API level fairness analysis (§3.4.2)
+- **tqp-benchmark**: Spinoza comparison benchmark (disabled due to Rust 1.89 compatibility)
+
+### Changed
+
+- H₂ hardware error corrected: -7.4 → -4.2 mHa
+- LiH description: "chemical accuracy" → "approaching chemical accuracy" (1.77 > 1.6 mHa)
+- Paper version v4 → v5
+
+### Fixed
+
+- Doc comment HTML warnings (`<Complex64>` → backticks)
+- .gitignore: Added `_workspace/` for internal files
+
+---
+
+## [3.4.0] - 2025-12-23
+
+### Added
+
+- **tqp-benchmark**: Criterion-based benchmarking module
+- **PRX Paper**: Spinoza Rust-to-Rust comparison (1.4-1.9× init, 9-17× gate speedup)
+- **PRX Paper**: LiH 4-qubit hardware validation (1.77 mHa)
+- **PRX Paper**: Error budget decomposition and mitigation roadmap
+- **PRX Paper**: §2.5 Physical Realization section
+
+### Hardware Validation
+
+- H₂ (2-qubit): -4.2 mHa error on ibm_torino
+- LiH (4-qubit): 1.77 mHa error on ibm_fez (near chemical accuracy)
+
+---
+
 ## [1.2.0] - 2025-12-20
 
 ### Added

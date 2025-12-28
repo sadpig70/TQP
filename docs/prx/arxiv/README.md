@@ -1,7 +1,8 @@
 # TQP arXiv Submission Package
 
 **Category:** quant-ph  
-**Title:** Temporal Quantum Processing for Efficient Quantum Simulation
+**Title:** Temporal Quantum Processing for Efficient Quantum Simulation  
+**Last Synced:** 2025-12-27 (from `docs/prx/paper/`)
 
 ---
 

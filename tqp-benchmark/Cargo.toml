@@ -35,6 +35,11 @@ clap = { version = "4.0", features = ["derive"], optional = true }
 [dev-dependencies]
 criterion = "0.5"
 
+# Spinoza - Rust 기반 양자 시뮬레이터 (공정 벤치마크용)
+# 주의: 현재 Spinoza가 Rust 1.89+ 호환성 문제로 비활성화
+# 해결 시 spinoza feature를 활성화하여 사용
+# spinoza = { git = "https://github.com/QuState/spinoza", branch = "main" }
+
 [features]
 default = []
 cli = ["clap"]
@@ -47,4 +52,7 @@ harness = false
 name = "comparison_bench"
 harness = false
 
-
+# 참고: Spinoza 호환성 문제로 임시 비활성화 (Rust 1.89 avx512_target_feature)
+# [[bench]]
+# name = "tqp_vs_spinoza"
+# harness = false

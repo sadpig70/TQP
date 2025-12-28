@@ -1,59 +1,70 @@
 # TQP PRX Paper Project
 
-**Status:** 설계중  
+**Status:** In Development  
 **Branch:** prx-paper  
-**Target:** PRX Quantum 논문 투고
+**Target:** PRX Quantum Submission
 
 ---
 
-## 개요
+## Overview
 
-이 디렉토리는 PRX Quantum 논문 투고를 위한 모든 자료를 중앙화합니다.
+This directory centralizes all materials for PRX Quantum paper submission.
 
-## 디렉토리 구조
+## Directory Structure
 
 ```
 docs/prx/
-├── README.md           # 본 문서
-├── milestones/         # 마일스톤별 기록
-│   ├── M1_hamiltonian.md   # M1: BeH₂ 해밀토니안 (Week 2)
-│   ├── M2_hardware.md      # M2: 하드웨어 검증 (Week 4)
-│   ├── M3_benchmark.md     # M3: 벤치마크/이론 (Week 6)
-│   └── M4_submission.md    # M4: 논문 제출 (Week 9)
-├── data/               # 실험 데이터
-│   ├── beh2/           # BeH₂ 관련 데이터
-│   └── benchmarks/     # 벤치마크 결과
-├── figures/            # 논문용 그림
-└── paper/              # LaTeX 원고
+├── README.md               # This document
+├── PRX_Submission_Package.md   # Cover letter and checklist
+├── arxiv/                  # arXiv preprint version
+│   ├── TQP_PRX.tex
+│   └── references.bib
+├── paper/                  # Main paper
+│   ├── draft_v1.md         # Markdown draft (v5)
+│   ├── TQP_PRX.tex         # LaTeX version
+│   ├── TQP_PRX.pdf         # Compiled PDF
+│   └── references.bib      # Bibliography
+└── figures/                # Paper figures
 ```
 
-## 마일스톤
+## Milestones
 
-| 마일스톤 | 목표 주차 | 완료 기준 | 상태 |
-|----------|-----------|-----------|------|
-| **M1** | Week 2 | 검증된 BeH₂ 해밀토니안, TQP 통합 | ✅ 완료 |
-| **M2** | Week 4 | IBM 하드웨어 검증, 오차 < 10 mHa | 🔄 H₂ 완료 |
-| **M3** | Week 6 | 벤치마크 완료, 이론 초안 | 설계중 |
-| **M4** | Week 9 | PRX Quantum 제출 | 설계중 |
+| Milestone | Target Week | Completion Criteria | Status |
+|-----------|-------------|---------------------|--------|
+| **M1** | Week 2 | BeH₂ Hamiltonian verified, TQP integrated | ✅ Complete |
+| **M2** | Week 4 | IBM hardware validation, error < 10 mHa | ✅ H₂ + LiH |
+| **M3** | Week 6 | Benchmarks complete, theory draft | ✅ Complete |
+| **M4** | Week 9 | PRX Quantum submission | 🔄 Ready |
 
-## 작업 트랙
+## Work Tracks
 
-| 트랙 | 기간 | 담당 | 초점 |
-|------|------|------|------|
-| **A (실험)** | W1-W4 | 정욱 | BeH₂ → 하드웨어 |
-| **B (벤치마크)** | W3-W5 | AI 협업 | 시뮬레이터 비교 |
-| **C (이론)** | W4-W6 | 정욱 + AI | 자원 이론 증명 |
-| **D (작성)** | W5-W9 | 정욱 | 논문 초안 → 최종 |
+| Track | Duration | Lead | Focus |
+|-------|----------|------|-------|
+| **A (Experiment)** | W1-W4 | J.W. Yu | BeH₂ → Hardware |
+| **B (Benchmark)** | W3-W5 | AI Collab | Simulator comparison |
+| **C (Theory)** | W4-W6 | J.W. Yu + AI | Resource theory proof |
+| **D (Writing)** | W5-W9 | J.W. Yu | Draft → Final |
 
-## 참조 문서
+## Key Results
 
-- [TQP_Integrated_Specification.md](../TQP_Integrated_Specification.md) - TQP v3.2 기술 사양
-- [TQP_Upgrade_plan.md](../TQP_Upgrade_plan.md) - PRX 고도화 계획 (Gantree)
-- [TQP_PRX_Workspace_Structure.md](../TQP_PRX_Workspace_Structure.md) - 워크스페이스 구조
+| Metric | Value | Status |
+|--------|-------|--------|
+| H₂ (2-qubit) Error | -4.2 mHa | ✅ |
+| LiH (4-qubit) Error | 1.77 mHa | ✅ Near chemical accuracy |
+| Spinoza Comparison | 1.4-1.9× init, 9-17× gate | ✅ |
+| Crossover Point | N ≈ 14-16 qubits | ✅ |
 
-## 변경 이력
+## Reference Documents
 
-| 날짜 | 변경 내용 |
-|------|----------|
-| 2025-12-21 | 초기 구조 생성 |
-| 2025-12-22 | M1 완료, M2 H₂ 검증 성공 (ibm_torino, -7.4 mHa) |
+- [TQP_Integrated_Specification_3.5.md](../TQP_Integrated_Specification_3.5.md) - TQP v3.5 Technical Spec
+- [PRX_Paper_Improvement_Plan.md](../PRX_Paper_Improvement_Plan.md) - Improvement Plan v2.0
+- [PRX_Submission_Package.md](PRX_Submission_Package.md) - Cover Letter
+
+## Change Log
+
+| Date | Description |
+|------|-------------|
+| 2025-12-21 | Initial structure created |
+| 2025-12-22 | M1 complete, M2 H₂ validation success (ibm_torino, -4.2 mHa) |
+| 2025-12-23 | LiH 4-qubit validation (1.77 mHa) |
+| 2025-12-27 | v5 revision complete, submission prep |

@@ -10,6 +10,10 @@ Cargo.lock
 # Legacy/archived files
 /_legacy/
 
+# Workspace (internal working files, not for distribution)
+_workspace/
+docs/_workspace/
+
 # IDE and editor
 .idea/
 .vscode/
@@ -56,4 +60,3 @@ tqp-ibm-apikey.json
 # Generated data files
 beh2_*.json
 h2_statistical_results.json
-

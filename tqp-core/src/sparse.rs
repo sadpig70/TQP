@@ -389,7 +389,7 @@ impl SparseStateVector {
     /// Converts to a raw Array1 (for advanced use)
     ///
     /// # Returns
-    /// Dense Array1<Complex64> representation
+    /// Dense `Array1<Complex64>` representation
     pub fn to_array(&self) -> Array1<Complex64> {
         let total_dim = self.dimension();
         let mut array = Array1::<Complex64>::zeros(total_dim);
